@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "tomasds",
+        "puntaje": 2000,
+        "nivel_alcanzado": 5,
+        "niveles_completados": 5,
+        "tiempos_por_nivel": [
+            7.67,
+            8.05,
+            9.01,
+            8.33,
+            14.11
+        ],
+        "tiempo_total": 47.18,
+        "ganador": true,
+        "fecha": "2026-02-03 21:03:13"
+    },
+    {
+        "nombre": "asdasd",
+        "puntaje": 2000,
+        "nivel_alcanzado": 5,
+        "niveles_completados": 5,
+        "tiempos_por_nivel": [
+            13.3,
+            9.08,
+            8.72,
+            9.52,
+            16.52
+        ],
+        "tiempo_total": 57.14,
+        "ganador": true,
+        "fecha": "2026-02-10 02:03:02"
+    }
+]

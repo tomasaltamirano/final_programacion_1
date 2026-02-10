@@ -1,0 +1,81 @@
+categoria,elemento,imagen,dificultad
+Animales de Campo,Cerdo,animal_campo_1.jpg,1
+Animales de Campo,Gallina,animal_campo_2.jpg,1
+Animales de Campo,Oveja,animal_campo_3.jpg,1
+Animales de Campo,Vaca,animal_campo_4.jpg,1
+Cartas,Corazón,carta_1.jpg,1
+Cartas,Diamante,carta_2.jpg,1
+Cartas,Trébol,carta_3.jpg,1
+Cartas,Pica,carta_4.jpg,1
+Emojis,Sonrisa,emoji_1.jpg,1
+Emojis,Llanto,emoji_2.jpg,1
+Emojis,Risa,emoji_3.jpg,1
+Emojis,Enojado,emoji_4.jpg,1
+Electrodomésticos,Batidora,electrodomestico_1.jpg,1
+Electrodomésticos,Cafetera,electrodomestico_2.jpg,1
+Electrodomésticos,Tostadora,electrodomestico_3.jpg,1
+Electrodomésticos,Licuadora,electrodomestico_4.jpg,1
+Profesiones,Bombero,profesion_1.jpg,2
+Profesiones,Chef,profesion_2.jpg,2
+Profesiones,Enfermero,profesion_3.jpg,2
+Profesiones,Policía,profesion_4.jpg,2
+Relojes,Digital,reloj_1.jpg,2
+Relojes,Brújula,reloj_2.jpg,2
+Relojes,Despertador,reloj_3.jpg,2
+Relojes,Reloj de Arena,reloj_4.jpg,2
+Monumentos,Mezquita,monumento_1.jpg,2
+Monumentos,Estatua de la Libertad,monumento_2.jpg,2
+Monumentos,Torre Eiffel,monumento_3.jpg,2
+Monumentos,Pirámides,monumento_4.jpg,2
+Origami,Avión,origami_1.jpg,2
+Origami,Grulla,origami_2.jpg,2
+Origami,Barco,origami_3.jpg,2
+Origami,Mariposa,origami_4.jpg,2
+Frutas,Manzana,frutas_1.png,3
+Frutas,Banana,frutas_2.png,3
+Frutas,Naranja,frutas_3.png,3
+Frutas,Uvas,frutas_4.png,3
+Mascotas,Perro,mascotas_1.png,3
+Mascotas,Gato,mascotas_2.png,3
+Mascotas,Conejo,mascotas_3.png,3
+Mascotas,Hámster,mascotas_4.png,3
+Limpieza,Escoba,limpieza_1.png,3
+Limpieza,Trapeador,limpieza_2.png,3
+Limpieza,Aspiradora,limpieza_3.png,3
+Limpieza,Balde,limpieza_4.png,3
+Transporte Público,Colectivo,transporte_publico_1.png,3
+Transporte Público,Tren,transporte_publico_2.png,3
+Transporte Público,Subte,transporte_publico_3.png,3
+Transporte Público,Tranvía,transporte_publico_4.png,3
+Ajedrez,Rey,ajedrez_1.png,4
+Ajedrez,Reina,ajedrez_2.png,4
+Ajedrez,Caballo,ajedrez_3.png,4
+Ajedrez,Torre,ajedrez_4.png,4
+Policía,Patrullero,policia_1.png,4
+Policía,Esposas,policia_2.png,4
+Policía,Placa,policia_3.png,4
+Policía,Sirena,policia_4.png,4
+Juegos de Bebé,Sonajero,juego_bebe_1.png,4
+Juegos de Bebé,Peluche,juego_bebe_2.png,4
+Juegos de Bebé,Bloques,juego_bebe_3.png,4
+Juegos de Bebé,Móvil,juego_bebe_4.png,4
+Desastres Naturales,Terremoto,desastre_natural_1.png,4
+Desastres Naturales,Tornado,desastre_natural_2.png,4
+Desastres Naturales,Tsunami,desastre_natural_3.png,4
+Desastres Naturales,Volcán,desastre_natural_4.png,4
+Cuidado del Pelo,Peine,cuidado_del_pelo_1.png,5
+Cuidado del Pelo,Secador,cuidado_del_pelo_2.png,5
+Cuidado del Pelo,Cepillo,cuidado_del_pelo_3.png,5
+Cuidado del Pelo,Plancha,cuidado_del_pelo_4.png,5
+Higiene Dental,Cepillo de Dientes,higiene_dental_1.png,5
+Higiene Dental,Pasta Dental,higiene_dental_2.png,5
+Higiene Dental,Hilo Dental,higiene_dental_3.png,5
+Higiene Dental,Enjuague,higiene_dental_4.png,5
+Ganchos,Gancho Madera,ganchos_1.png,5
+Ganchos,Gancho Plástico,ganchos_2.png,5
+Ganchos,Broche,ganchos_3.png,5
+Ganchos,Pinza,ganchos_4.png,5
+Nostalgia,Cassette,nostalgia_1.png,5
+Nostalgia,Diskette,nostalgia_2.png,5
+Nostalgia,VHS,nostalgia_3.png,5
+Nostalgia,Walkman,nostalgia_4.png,5
