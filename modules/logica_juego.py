@@ -221,7 +221,7 @@ class Juego:
         """
         if not self.pausado:
             self.tiempo_pausa_inicio = time.time()
-            pygame.mixer.music.pause()  
+            pygame.mixer.music.pause()
         else:
             self.tiempo_pausado += time.time() - self.tiempo_pausa_inicio
             pygame.mixer.music.unpause()
@@ -321,8 +321,27 @@ class Juego:
         Returns:
             bool: True si todos los seleccionados tienen la misma categoría.
         """
-        cat = self.seleccionados[0]["categoria"]
-        return all(i["categoria"] == cat for i in self.seleccionados)
+        # cat = self.seleccionados[0]["categoria"]
+        # return all(i["categoria"] == cat for i in self.seleccionados)
+
+    def _es_grupo_valido(self) -> bool:
+        """
+        Verifica si todos los elementos seleccionados comparten categoría.
+        """
+
+        es_valido = False
+
+        if self.seleccionados:
+
+            es_valido = True
+            categoria_referencia = self.seleccionados[0]["categoria"]
+
+            for elemento in self.seleccionados:
+                if elemento["categoria"] != categoria_referencia:
+                    es_valido = False
+                    break
+
+        return es_valido
 
     def _procesar_acierto(self):
         """Procesa un agrupamiento correcto.
@@ -389,38 +408,38 @@ class Juego:
 
         guardar_resultado_json("data/resultados.json", estadisticas)
 
-
     def mezclar_tablero(self, es_reintento=False):
         """Reinicia el tablero para el nivel actual."""
         categorias_validas = self._obtener_categorias_validas()
-    
+
         if not categorias_validas:
             print(f"ERROR: No hay categorías para el nivel {self.nivel_actual}")
             return
-    
-        elementos_seleccionados = self._seleccionar_elementos_aleatorios(categorias_validas)
+
+        elementos_seleccionados = self._seleccionar_elementos_aleatorios(
+            categorias_validas
+        )
         self._preparar_tablero(elementos_seleccionados, es_reintento)
 
-    
     def _obtener_categorias_validas(self):
-    
+
         grupos_temporales = {}
-        
+
         for elemento in self.elementos_totales:
-            
+
             dificultad_elem = elemento.get("dificultad", 1)
-            
+
             if dificultad_elem == self.nivel_actual:
                 categoria = elemento["categoria"]
-                
+
                 if categoria not in grupos_temporales:
                     grupos_temporales[categoria] = []
                 grupos_temporales[categoria].append(elemento)
 
         resultado_final = {}
-        
+
         for categoria, lista_items in grupos_temporales.items():
-            
+
             if len(lista_items) == 4:
                 resultado_final[categoria] = lista_items
 
@@ -429,30 +448,30 @@ class Juego:
     def _seleccionar_elementos_aleatorios(self, categorias_dict):
         """Selecciona 4 categorías aleatorias y retorna sus elementos."""
         cantidad = min(4, len(categorias_dict))
-        
+
         if cantidad < 4:
             print(f"AVISO: Nivel {self.nivel_actual} tiene solo {cantidad} categorías.")
-        
+
         categorias_seleccionadas = random.sample(list(categorias_dict.keys()), cantidad)
-        
+
         elementos = []
         for cat in categorias_seleccionadas:
             elementos.extend(categorias_dict[cat])
-        
+
         return elementos
 
     def _preparar_tablero(self, elementos, es_reintento):
         """Mezcla elementos y resetea el estado del nivel."""
         self.tablero = elementos
         random.shuffle(self.tablero)
-        
+
         self.categorias_completadas = []
         self.seleccionados = []
-        
+
         if not es_reintento:
             self.vidas = VIDAS_INICIALES
             self.reinicios_nivel = REINICIOS_MAXIMOS
-        
+
         self.tiempo_inicio_nivel = time.time()
         self.tiempo_pausado = 0
 
@@ -595,7 +614,9 @@ class Juego:
 
         if self.pausado:
             tiempo_transcurrido = int(
-                self.tiempo_pausa_inicio - self.tiempo_inicio_nivel - self.tiempo_pausado
+                self.tiempo_pausa_inicio
+                - self.tiempo_inicio_nivel
+                - self.tiempo_pausado
             )
         else:
             tiempo_transcurrido = int(
