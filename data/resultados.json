@@ -46,5 +46,38 @@
         "tiempo_total": 46.52,
         "ganador": true,
         "fecha": "2026-02-10 20:16:30"
+    },
+    {
+        "nombre": "asd",
+        "puntaje": 2400,
+        "nivel_alcanzado": 6,
+        "niveles_completados": 6,
+        "tiempos_por_nivel": [
+            13.07,
+            7.04,
+            8.2,
+            8.21,
+            12.6,
+            13.21
+        ],
+        "tiempo_total": 62.33,
+        "ganador": true,
+        "fecha": "2026-02-10 23:00:05"
+    },
+    {
+        "nombre": "pepito",
+        "puntaje": 2000,
+        "nivel_alcanzado": 5,
+        "niveles_completados": 5,
+        "tiempos_por_nivel": [
+            10.11,
+            10.26,
+            10.51,
+            11.4,
+            9.96
+        ],
+        "tiempo_total": 52.24,
+        "ganador": true,
+        "fecha": "2026-02-10 23:01:20"
     }
 ]

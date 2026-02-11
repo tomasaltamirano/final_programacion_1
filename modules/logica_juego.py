@@ -316,15 +316,6 @@ class Juego:
             self._procesar_error()
 
     def _es_grupo_valido(self) -> bool:
-        """Verifica si todos los elementos seleccionados comparten categoría.
-
-        Returns:
-            bool: True si todos los seleccionados tienen la misma categoría.
-        """
-        # cat = self.seleccionados[0]["categoria"]
-        # return all(i["categoria"] == cat for i in self.seleccionados)
-
-    def _es_grupo_valido(self) -> bool:
         """
         Verifica si todos los elementos seleccionados comparten categoría.
         """
